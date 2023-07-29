@@ -121,12 +121,12 @@ void ui_end(void)
 
 void draw_info(ymMusicInfo_t &info, const char *filename)
 {
-	mvprintw(pos_y+1, pos_x+16, filename);
-	mvprintw(pos_y+2, pos_x+16, info.pSongName);
-	mvprintw(pos_y+3, pos_x+16, info.pSongAuthor);
-	mvprintw(pos_y+4, pos_x+16, info.pSongComment);
-	mvprintw(pos_y+5, pos_x+16, info.pSongType);
-	mvprintw(pos_y+6, pos_x+16, info.pSongPlayer);
+	mvprintw(pos_y+1, pos_x+16, "%s", filename);
+	mvprintw(pos_y+2, pos_x+16, "%s", info.pSongName);
+	mvprintw(pos_y+3, pos_x+16, "%s", info.pSongAuthor);
+	mvprintw(pos_y+4, pos_x+16, "%s", info.pSongComment);
+	mvprintw(pos_y+5, pos_x+16, "%s", info.pSongType);
+	mvprintw(pos_y+6, pos_x+16, "%s", info.pSongPlayer);
 	if (digi)
 		mvprintw(pos_y+7, pos_x+16, "%2d:%02d", info.musicTimeInSec/60,info.musicTimeInSec%60);
 	move(0,0);
