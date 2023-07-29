@@ -55,7 +55,7 @@ bool playing;
 bool ff = false;
 bool rew = false;
 	
-char *platform;
+const char *platform;
 
 	if (PLATFORM)
 		platform = "64bit";
