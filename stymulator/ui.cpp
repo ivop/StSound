@@ -48,9 +48,9 @@ void draw_frame(void)
 
 	move(pos_y, pos_x+1);
 	if (PLATFORM)
-		addstr("---- STYMulator v0.21a (64bit) - Atari ST (16-bit) YM music files player -----");
+		addstr("---- STYMulator v0.22 (64bit) - Atari ST (16-bit) YM music files player -----");
 	else
-		addstr("---- STYMulator v0.21a (32bit) - Atari ST (16-bit) YM music files player -----");
+		addstr("---- STYMulator v0.22 (32bit) - Atari ST (16-bit) YM music files player -----");
 	move(pos_y+8, pos_x+1);
 	addstr("------------------------------------------------------------------------------");
 	move(pos_y+12, pos_x+1);
