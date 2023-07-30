@@ -108,7 +108,7 @@ int main(int argc, char* argv[])
 
 		printf("Generating wav file from \"%s\"\n",argv[1]);
 		printf("%s\n%s\n(%s)\n",info.pSongName,info.pSongAuthor,info.pSongComment);
-		printf("Total music time: %ld seconds.\n",info.musicTimeInSec);
+		printf("Total music time: %d seconds.\n",info.musicTimeInSec);
 
 		FILE *out = fopen(argv[2],"wb");
 		if (!out)
@@ -157,7 +157,7 @@ int main(int argc, char* argv[])
 		fwrite(&head,1,sizeof(WAVHeader),out);
 		fseek(out,0,SEEK_END);
 		fclose(out);
-		printf("%ld samples written (%.02f Mb).\n",totalNbSample,(float)(totalNbSample*sizeof(ymsample))/(1024*1024));
+		printf("%d samples written (%.02f Mb).\n",totalNbSample,(float)(totalNbSample*sizeof(ymsample))/(1024*1024));
 	}
 	else
 	{	// Error in loading music.
