@@ -71,7 +71,7 @@ typedef struct
 
 int main(int argc, char* argv[])
 {
-	char *platform;
+	const char *platform;
 
 	if (PLATFORM)
 		platform = "64bit";
