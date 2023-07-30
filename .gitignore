@@ -354,3 +354,4 @@ StSoundLibrary/*.a
 StSoundLibrary/LZH/*.o
 stymulator/*.o
 stymulator/ymplayer
+stymulator/ym2wav
